@@ -1,0 +1,47 @@
+<html>
+    <head></head>
+    <body>
+        <form >
+            <table>
+                <tr>
+                    <td>
+                        Enter Food-item:
+                    </td>
+                    <td>
+                        <input type="text" required name="foodItem">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        Enter Quantity:
+                    </td>
+                    <td>
+                        <input type="number" required name="foodQuantity">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="View Order" formaction="viewOrder">
+                    </td>
+                    <td>
+                        <input type="submit" value="Add FoodItem to Order" formaction="orderFood">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="submit" value="Cancel Order" formaction="cancelOrder">
+                    </td>
+                    <td>
+                      
+                    </td>
+                </tr>
+            </table>
+        </form>
+
+        <p>
+            {{order}}
+        </p>
+    </body>
+</html>

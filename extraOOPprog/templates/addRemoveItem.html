@@ -1,0 +1,37 @@
+<html>
+    <head></head>
+    <body>
+        <form>
+        <table>
+            <tr>
+                <td>
+                    Enter Food Item:
+                </td>
+                
+                <td>
+                    <input type="text" name="foodItem" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                   Enter Price: 
+                </td>
+                <td>
+                    <input type="number" step="0.01" name="foodPrice">
+                    {{priceError}}
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                   <input type="submit" value="Remove from Menu" formaction="removeItem">
+                </td>
+                <td>
+                    <input type="submit" value="Add to Menu" formaction="addItem">
+                </td>
+            </tr>
+        </table>
+        </form>
+    </body>
+</html>
